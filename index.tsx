@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+  const [first, setfirst] = React.useState(true);
+  return first ? <div>Welcome to github</div> : <div>Thank you github</div>;
+};
 
-export default index
+export default index;
